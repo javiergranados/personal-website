@@ -5,8 +5,13 @@ module.exports = {
     author: 'Javier Granados',
   },
   plugins: [
-    'gatsby-plugin-sharp',
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        icon: 'src/images/favicon.png'
+      }
+    },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
