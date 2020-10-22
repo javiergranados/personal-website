@@ -1,0 +1,37 @@
+{
+  "name": "jvgranados.com",
+  "description": "My personal website",
+  "version": "0.1.0",
+  "author": "Javier Granados",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "gatsby",
+    "javascript",
+    "jvgranados",
+    "website"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jvgranados/jvgranados.com"
+  },
+  "scripts": {
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "start": "gatsby serve -p 8000",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^2.24.79",
+    "gatsby-plugin-react-helmet": "^3.3.14",
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.6.43",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2"
+  }
+}
