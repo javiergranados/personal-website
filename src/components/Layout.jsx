@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Header from "./Header"
+import Navbar from "./Navbar"
 import Cover from "../images/cover.svg";
 import Footer from './Footer'
 import "../styles/global.css"
@@ -8,8 +8,8 @@ import "../styles/global.css"
 function Layout ({ children }) {
   return (
     <div className="flex flex-col flex-1 w-screen h-screen text-base text-light bg-dark">
-      <Header />
-      <div className="relative flex flex-col flex-1 w-full my-0 mx-auto px-8 max-w-5xl">
+      <Navbar />
+      <div className="relative flex flex-col flex-1 w-full max-w-5xl px-8 mx-auto my-0">
         <main className="flex-1">
           <Cover />
           {children}
