@@ -1,9 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Header from "./Header"
-import Logo from "../images/header-logo.svg";
-import Footer from '/Footer'
-import "../styles/normalize.css"
+import Cover from "../images/cover.svg";
+import Footer from './Footer'
 import "../styles/global.css"
 
 function Layout ({ children }) {
@@ -18,7 +17,7 @@ function Layout ({ children }) {
           color: 'var(--light)',
         }}
       >
-        <Logo />
+        <Cover />
         <main>{children}</main>
         <Footer />
       </div>

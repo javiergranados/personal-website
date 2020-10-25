@@ -6,12 +6,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    {
-      resolve: 'gatsby-plugin-sharp',
-      options: {
-        icon: 'src/images/favicon.png'
-      }
-    },
+    'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
