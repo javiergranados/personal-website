@@ -2,14 +2,14 @@ import React from "react"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
-function IndexPage() {
+function AboutPage() {
   return (
     <Layout>
-      <SEO title="Home" />
-      <h1>/home</h1>
-      <p>Home page</p>
+      <SEO title="About" />
+      <h1>/about</h1>
+      <p>About page</p>
     </Layout>
   )
 }
 
-export default IndexPage
+export default AboutPage

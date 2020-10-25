@@ -1,8 +1,8 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
+import Logo from "../images/noche-04.svg"
 
-function Header ({ siteTitle }) {
+function Header () {
   return (
     <header
       style={{
@@ -18,7 +18,9 @@ function Header ({ siteTitle }) {
           padding: '1.45rem 1rem',
         }}
       >
-        <h1 style={{ margin: 0 }}>
+        <Logo style={{
+          maxWidth: 50,
+        }}/>
           <Link
             to="/"
             style={{
@@ -26,20 +28,38 @@ function Header ({ siteTitle }) {
               textDecoration: 'none',
             }}
           >
-            {siteTitle}
+            /home
           </Link>
-        </h1>
+          <Link
+            to="/about"
+            style={{
+              color: "var(--light)",
+              textDecoration: 'none',
+            }}
+          >
+            /about
+          </Link>
+        <Link
+          to="/projects"
+          style={{
+            color: "var(--light)",
+            textDecoration: 'none',
+          }}
+        >
+          /projects
+          </Link>
+        <Link
+          to="/uses"
+          style={{
+            color: "var(--light)",
+            textDecoration: 'none',
+          }}
+        >
+          /uses
+          </Link>
       </div>
     </header>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: '',
 }
 
 export default Header
