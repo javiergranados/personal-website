@@ -7,21 +7,16 @@ import "../styles/global.css"
 
 function Layout ({ children }) {
   return (
-    <>
+    <div className="flex flex-col flex-1 w-screen h-screen text-base text-light bg-dark">
       <Header />
-      <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '0 2rem 2rem',
-          color: 'var(--light)',
-        }}
-      >
-        <Cover />
-        <main>{children}</main>
-        <Footer />
+      <div className="relative flex flex-col flex-1 w-full my-0 mx-auto px-8 max-w-5xl">
+        <main className="flex-1">
+          <Cover />
+          {children}
+        </main>
       </div>
-    </>
+      <Footer />
+    </div>
   )
 }
 

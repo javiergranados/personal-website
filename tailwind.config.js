@@ -1,12 +1,12 @@
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
-  purge: [],
+  purge: ["./src/components/**/*.{js,ts,jsx,tsx}", "./src/pages/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        dark: '#051221',
+        light: '#80b2ed',
+        white: '#ffffff',
+      },
+    },
   },
-  variants: {},
-  plugins: [],
 }

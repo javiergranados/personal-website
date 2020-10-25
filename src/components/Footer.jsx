@@ -13,9 +13,7 @@ function Footer() {
   `)
 
   return (
-    <footer style={{
-      marginTop: '2rem'
-    }}>
+    <footer className="mt-2 pt-5 pb-4 pl-8 border-t border-light">
       © {new Date().getFullYear()} {data.site.siteMetadata?.author || ''} - Web Developer
     </footer>
   )

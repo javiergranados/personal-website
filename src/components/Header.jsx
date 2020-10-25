@@ -4,60 +4,19 @@ import Logo from "../images/logo.svg"
 
 function Header () {
   return (
-    <header
-      style={{
-        background: "var(--dark)",
-        marginBottom: '1.45rem',
-        borderBottom: "1px solid var(--light)"
-      }}
-    >
-      <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '1.45rem 1rem',
-        }}
-      >
-        <Logo style={{
-          maxWidth: 50,
-        }}/>
-          <Link
-            to="/"
-            style={{
-              color: "var(--light)",
-              textDecoration: 'none',
-            }}
-          >
-            /home
-          </Link>
-          <Link
-            to="/about"
-            style={{
-              color: "var(--light)",
-              textDecoration: 'none',
-            }}
-          >
-            /about
-          </Link>
-        <Link
-          to="/projects"
-          style={{
-            color: "var(--light)",
-            textDecoration: 'none',
-          }}
-        >
-          /projects
-          </Link>
-        <Link
-          to="/uses"
-          style={{
-            color: "var(--light)",
-            textDecoration: 'none',
-          }}
-        >
-          /uses
-          </Link>
-      </div>
+    <header className="flex items-center content-center mb-2 py-5 border-b border-light">
+      <Link to="/" className="mx-2">
+        <Logo className="w-16 ml-8 mr-2" />
+      </Link>
+      <Link to="/about" className="mx-2">
+        /about
+      </Link>
+      <Link to="/projects" className="mx-2">
+        /projects
+      </Link>
+      <Link to="/uses" className="mx-2">
+        /uses
+      </Link>
     </header>
   )
 }
