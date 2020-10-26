@@ -1,11 +1,11 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Navbar from "./Navbar"
-import Cover from "../images/cover.svg";
+import React from 'react'
+import PropTypes from 'prop-types'
+import Navbar from './Navbar'
+import Cover from '../images/cover.svg'
 import Footer from './Footer'
-import "../styles/global.css"
+import '../styles/global.css'
 
-function Layout ({ children }) {
+function Layout({ children }) {
   return (
     <div className="flex flex-col flex-1 w-screen h-screen text-base text-light bg-dark">
       <Navbar />
