@@ -6,7 +6,7 @@ function ProjectsPage() {
   return (
     <Layout>
       <SEO title="Projects" />
-      <h1>/projects</h1>
+      <h1 className="text-2xl">/projects</h1>
       <p>Projects page</p>
     </Layout>
   )

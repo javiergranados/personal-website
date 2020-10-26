@@ -6,7 +6,7 @@ function IndexPage() {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>/home</h1>
+      <h1 className="text-2xl">/home</h1>
       <p>Home page</p>
     </Layout>
   )

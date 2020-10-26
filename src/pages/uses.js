@@ -6,7 +6,7 @@ function UsesPage() {
   return (
     <Layout>
       <SEO title="Uses" />
-      <h1>/uses</h1>
+      <h1 className="text-2xl">/uses</h1>
       <p>Uses page</p>
     </Layout>
   )

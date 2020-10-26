@@ -6,7 +6,7 @@ function AboutPage() {
   return (
     <Layout>
       <SEO title="About" />
-      <h1>/about</h1>
+      <h1 className="text-2xl">/about</h1>
       <p>About page</p>
     </Layout>
   )
