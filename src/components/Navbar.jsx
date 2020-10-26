@@ -13,7 +13,7 @@ function Navbar() {
         <Logo className="w-16 ml-8 mr-2" />
       </div>
       <div className="block lg:hidden">
-        <button className="flex items-center px-3 py-2 text-teal-200 transition-colors duration-300 ease-in-out border rounded border-light hover:border-light hover:bg-light hover:text-dark focus:outline-none" onClick={handleClick}>
+        <button  className="flex items-center px-3 py-2 text-teal-200 transition-colors duration-300 ease-in-out border rounded border-light focus:outline-none" onClick={handleClick}>
           <svg class={`${showMenu ? "hidden" : "block"} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
