@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
-import { Link } from 'gatsby'
-import Logo from '../images/logo.svg'
+import { useState } from 'react'
+import Link from 'next/link'
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false)
@@ -10,8 +9,8 @@ function Navbar() {
   return (
     <nav className="flex flex-wrap items-center justify-between p-6 border-b bg-dark border-light">
       <div className="items-center flex-shrink-0 hidden mr-6 text-white lg:flex">
-        <Link to="/">
-          <Logo className="w-16 ml-8 mr-2" />
+        <Link href="/">
+          <img src="/img/logo.svg" alt="logo" className="w-16 ml-8 mr-2" />
         </Link>
       </div>
       <div className="block lg:hidden">
@@ -45,17 +44,17 @@ function Navbar() {
           showMenu ? 'flex' : 'hidden'
         } flex-grow w-full lg:flex lg:items-center lg:w-auto lg:flex-row flex-col`}
       >
-        <Link to="/" className="block navbar__button odd first lg:hidden">
-          /home
+        <Link href="/">
+          <a className="block navbar__button odd first lg:hidden">/home</a>
         </Link>
-        <Link to="/about" className="navbar__button even">
-          /about
+        <Link href="/about">
+          <a className="navbar__button even">/about</a>
         </Link>
-        <Link to="/projects" className="navbar__button even">
-          /projects
+        <Link href="/projects">
+          <a className="navbar__button even">/projects</a>
         </Link>
-        <Link to="/uses" className="navbar__button odd">
-          /uses
+        <Link href="/uses">
+          <a className="navbar__button even">/uses</a>
         </Link>
         {/* TODO:  theme button switch  */}
       </div>

@@ -57,9 +57,8 @@ sketch
 !.yarn/cache
 yarn.lock
 
-### gatsby ###
-.cache/
-public
+### Next.js ###
+.next
 
 .vscode/
 
