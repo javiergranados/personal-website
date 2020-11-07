@@ -1,6 +1,8 @@
+/* purgecss start ignore */
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+/* purgecss end ignore */
 
 .navbar__button {
   @apply max-w-full px-0 py-2 mx-4 transition duration-300 ease-in-out outline-none text-light;
