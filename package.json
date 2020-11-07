@@ -6,7 +6,7 @@
   "license": "SEE LICENSE IN LICENSE",
   "keywords": [
     "react",
-    "gatsby",
+    "next",
     "javascript",
     "jvgranados",
     "website"
@@ -16,26 +16,20 @@
     "url": "https://github.com/jvgranados/jvgranados.com"
   },
   "scripts": {
-    "dev": "gatsby develop",
-    "build": "gatsby build",
-    "start": "gatsby serve -p 8000",
-    "lint": "eslint . --ext .jsx,.js --ignore-pattern '.cache/' --ignore-pattern '.node_modules/' --ignore-pattern 'public/'",
-    "lint:fix": "eslint . --fix --ext .jsx,.js --ignore-pattern '.cache/' --ignore-pattern '.node_modules/' --ignore-pattern 'public/'",
-    "clean": "gatsby clean"
+    "dev": "next dev -p 8000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --ext .jsx,.js --ignore-pattern '.next/' --ignore-pattern '.node_modules/'",
+    "lint:fix": "eslint . --fix --ext .jsx,.js --ignore-pattern '.next/' --ignore-pattern '.node_modules/'"
   },
   "dependencies": {
-    "gatsby": "^2.24.79",
-    "gatsby-plugin-postcss": "^3.0.3",
-    "gatsby-plugin-react-helmet": "^3.3.14",
-    "gatsby-plugin-react-svg": "^3.0.0",
-    "postcss": "^8.1.4",
+    "next": "^10.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0",
-    "tailwindcss": "^1.9.6"
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "eslint": "^7.12.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.14.0",
@@ -44,8 +38,10 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "postcss-preset-env": "^6.7.0",
     "prettier": "^2.1.2",
     "stylelint": "^13.7.2",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-standard": "^20.0.0",
+    "tailwindcss": "^1.9.6"
   }
 }
