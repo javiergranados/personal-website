@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false)
@@ -9,8 +10,8 @@ function Navbar() {
   return (
     <nav className="flex flex-wrap items-center justify-between p-6 border-b bg-dark border-light">
       <div className="items-center flex-shrink-0 hidden mr-6 text-white lg:flex">
-        <Link href="/">
-          <img src="/img/logo.svg" alt="logo" className="w-16 ml-8 mr-2" />
+        <Link href="/" className="ml-8 mr-2">
+          <Image src="/img/logo.svg" alt="logo" width={65} height={50} />
         </Link>
       </div>
       <div className="block lg:hidden">
