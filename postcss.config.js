@@ -1,12 +1,8 @@
 const purgecss = [
   '@fullhuman/postcss-purgecss',
   {
-    content: ['./pages/**/*.{js,jsx}', './components/**/*.{js,jsx}'],
-    defaultExtractor: content => {
-      const broadMatches = content.match(/[^<>"'`\\s]*[^<>"'`\\s:]/g) || []
-      const innerMatches = content.match(/[^<>"'`\\s.()]*[^<>"'`\\s.():]/g) || []
-      return broadMatches.concat(innerMatches)
-    },
+    content: ['./pages/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
+    defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || [],
   },
 ]
 

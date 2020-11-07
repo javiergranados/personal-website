@@ -1,4 +1,5 @@
 module.exports = {
+  purge: false,
   theme: {
     borderRadius: {
       100: '100px',
