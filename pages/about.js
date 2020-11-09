@@ -3,8 +3,10 @@ import Layout from '../components/Layout'
 function AboutPage() {
   return (
     <Layout title="About">
-      <h1 className="text-2xl">/about</h1>
-      <p>About page</p>
+      <p className="text-4xl">
+        Web Developer | Husband | Father of 2 | Ocasional Rock Climbing | Tea lover | Fan of Nintendo | Fantasy books
+        enthusiast
+      </p>
     </Layout>
   )
 }
