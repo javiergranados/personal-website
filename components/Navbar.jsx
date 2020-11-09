@@ -9,14 +9,18 @@ function Navbar() {
 
   const handleClick = () => setShowMenu(!showMenu)
 
-  const Logo = forwardRef(() => {
-    return <Image src="/img/logo.svg" alt="logo" width={65} height={50} loading="eager" />
+  const Logo = forwardRef(({ onClick, href }, ref) => {
+    return (
+      <a href={href} onClick={onClick} ref={ref}>
+        <Image src="/img/logo.svg" alt="logo" width={65} height={50} loading="eager" />
+      </a>
+    )
   })
 
   return (
     <nav className="flex flex-wrap items-center justify-between p-6 border-b bg-dark border-light">
       <div className="items-center flex-shrink-0 hidden mr-6 text-white cursor-pointer lg:flex">
-        <Link href="/" passHref>
+        <Link href="/">
           <Logo />
         </Link>
       </div>
