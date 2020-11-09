@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, forwardRef } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
@@ -9,11 +9,15 @@ function Navbar() {
 
   const handleClick = () => setShowMenu(!showMenu)
 
+  const Logo = forwardRef(() => {
+    return <Image src="/img/logo.svg" alt="logo" width={65} height={50} loading="eager" />
+  })
+
   return (
     <nav className="flex flex-wrap items-center justify-between p-6 border-b bg-dark border-light">
       <div className="items-center flex-shrink-0 hidden mr-6 text-white cursor-pointer lg:flex">
-        <Link href="/">
-          <Image src="/img/logo.svg" alt="logo" width={65} height={50} />
+        <Link href="/" passHref>
+          <Logo />
         </Link>
       </div>
       <div className="block lg:hidden">
@@ -52,14 +56,14 @@ function Navbar() {
             /home
           </a>
         </Link>
-        <Link href="/about">
-          <a className={`navbar__button even${(router.pathname === '/about' && ' selected') || ''}`}>/about</a>
-        </Link>
         <Link href="/projects">
-          <a className={`navbar__button odd${(router.pathname === '/projects' && ' selected') || ''}`}>/projects</a>
+          <a className={`navbar__button even${(router.pathname === '/projects' && ' selected') || ''}`}>/projects</a>
         </Link>
         <Link href="/uses">
-          <a className={`navbar__button even${(router.pathname === '/uses' && ' selected') || ''}`}>/uses</a>
+          <a className={`navbar__button odd${(router.pathname === '/uses' && ' selected') || ''}`}>/uses</a>
+        </Link>
+        <Link href="/about">
+          <a className={`navbar__button even${(router.pathname === '/about' && ' selected') || ''}`}>/about</a>
         </Link>
         {/* TODO:  theme button switch  */}
       </div>
