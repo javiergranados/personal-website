@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
       <Meta />
       <Layout title={pageProps.title}>
         {/* eslint-disable-next-line */}
-      <Component {...pageProps} />
+        <Component {...pageProps} />
       </Layout>
     </>
   )
