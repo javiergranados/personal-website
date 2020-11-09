@@ -19,6 +19,18 @@
 .navbar__button.even {
   @apply rounded-tr-300 rounded-tl-300 rounded-bl-100 rounded-br-200;
 }
+.link span {
+  @apply text-2xl transition duration-300 ease-in-out;
+}
+.link span.type {
+  @apply mr-3;
+}
+.link span.value {
+  @apply underline;
+}
+.link span.value:hover {
+  @apply text-white;
+}
 @screen lg {
   .navbar__button {
     @apply p-4;
