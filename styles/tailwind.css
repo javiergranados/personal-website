@@ -35,7 +35,8 @@
   .navbar__button {
     @apply p-4;
   }
-  .navbar__button:hover {
+  .navbar__button:hover,
+  .navbar__button.selected {
     @apply bg-light text-dark;
   }
   .navbar__button.first {

@@ -1,16 +1,18 @@
 import { useState } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 
 function Navbar() {
+  const router = useRouter()
   const [showMenu, setShowMenu] = useState(false)
 
   const handleClick = () => setShowMenu(!showMenu)
 
   return (
     <nav className="flex flex-wrap items-center justify-between p-6 border-b bg-dark border-light">
-      <div className="items-center flex-shrink-0 hidden mr-6 text-white lg:flex">
-        <Link href="/" className="ml-8 mr-2">
+      <div className="items-center flex-shrink-0 hidden mr-6 text-white cursor-pointer lg:flex">
+        <Link href="/">
           <Image src="/img/logo.svg" alt="logo" width={65} height={50} />
         </Link>
       </div>
@@ -46,16 +48,18 @@ function Navbar() {
         } flex-grow w-full lg:flex lg:items-center lg:w-auto lg:flex-row flex-col`}
       >
         <Link href="/">
-          <a className="block navbar__button odd first lg:hidden">/home</a>
+          <a className={`block navbar__button first odd lg:hidden${(router.pathname === '/' && ' selected') || ''}`}>
+            /home
+          </a>
         </Link>
         <Link href="/about">
-          <a className="navbar__button even">/about</a>
+          <a className={`navbar__button even${(router.pathname === '/about' && ' selected') || ''}`}>/about</a>
         </Link>
         <Link href="/projects">
-          <a className="navbar__button even">/projects</a>
+          <a className={`navbar__button odd${(router.pathname === '/projects' && ' selected') || ''}`}>/projects</a>
         </Link>
         <Link href="/uses">
-          <a className="navbar__button even">/uses</a>
+          <a className={`navbar__button even${(router.pathname === '/uses' && ' selected') || ''}`}>/uses</a>
         </Link>
         {/* TODO:  theme button switch  */}
       </div>
