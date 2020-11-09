@@ -1,9 +1,8 @@
 import Link from '../components/Link'
-import Layout from '../components/Layout'
 
 function ProjectsPage() {
   return (
-    <Layout title="Projects">
+    <>
       <h1 className="text-4xl font-semi">A brief list of my public projects</h1>
       <ul>
         <li>
@@ -13,8 +12,16 @@ function ProjectsPage() {
           <Link href="https://www.entrenaxsalud.es/">Entrena X Salud</Link>
         </li>
       </ul>
-    </Layout>
+    </>
   )
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      title: 'Projects',
+    },
+  }
 }
 
 export default ProjectsPage

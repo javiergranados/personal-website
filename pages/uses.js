@@ -1,9 +1,8 @@
 import Link from '../components/Link'
-import Layout from '../components/Layout'
 
 function UsesPage() {
   return (
-    <Layout title="Uses">
+    <>
       <h1 className="text-4xl font-semi">Apps</h1>
       <ul>
         <li>
@@ -52,8 +51,16 @@ function UsesPage() {
           </Link>
         </li>
       </ul>
-    </Layout>
+    </>
   )
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      title: 'Uses',
+    },
+  }
 }
 
 export default UsesPage

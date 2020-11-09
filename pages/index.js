@@ -1,8 +1,6 @@
-import Layout from '../components/Layout'
-
 function IndexPage() {
   return (
-    <Layout title="Home">
+    <>
       <h1 className="text-4xl font-semi">
         Hi everyone!&nbsp;
         <span role="img" aria-label="smiley face">
@@ -15,8 +13,16 @@ function IndexPage() {
           🇪🇸
         </span>
       </p>
-    </Layout>
+    </>
   )
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      title: 'Home',
+    },
+  }
 }
 
 export default IndexPage
