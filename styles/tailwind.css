@@ -14,9 +14,6 @@
   font-weight: 600;
   src: url('/fonts/IBMPlexSerif-SemiBold.ttf');
 }
-body {
-  @apply font-regular;
-}
 .navbar__button {
   @apply max-w-full px-0 py-2 mx-4 transition duration-300 ease-in-out outline-none text-light;
 }

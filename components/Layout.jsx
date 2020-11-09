@@ -11,7 +11,7 @@ function Layout({ title, children }) {
       <Head>
         <title>{`${title} | Javier Granados`}</title>
       </Head>
-      <div className="flex flex-col flex-1 w-screen h-screen text-base text-light bg-dark">
+      <div className="flex flex-col flex-1 w-screen h-screen text-base text-light bg-dark font-regular">
         <Navbar />
         <div className="relative flex flex-col flex-1 w-full max-w-5xl px-8 mx-auto my-0">
           <main className="flex-1">
