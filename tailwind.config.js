@@ -12,6 +12,10 @@ module.exports = {
         dark: '#051221',
         light: '#80b2ed',
       },
+      fontFamily: {
+        regular: ['ibm-regular'],
+        semi: ['ibm-semi'],
+      },
     },
   },
 }

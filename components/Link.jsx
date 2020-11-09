@@ -15,6 +15,7 @@ function CustomLink({ href, hideBullet, children }) {
 CustomLink.defaultProps = {
   hideBullet: false,
 }
+
 CustomLink.propTypes = {
   href: PropTypes.string.isRequired,
   hideBullet: PropTypes.bool,

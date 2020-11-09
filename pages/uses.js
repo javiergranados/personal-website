@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 function UsesPage() {
   return (
     <Layout title="Uses">
-      <h1 className="text-4xl">Apps</h1>
+      <h1 className="text-4xl font-semi">Apps</h1>
       <ul>
         <li>
           <span className="text-2xl">▷ Editor&ensp;-&ensp;</span>
@@ -25,7 +25,7 @@ function UsesPage() {
           </Link>
         </li>
       </ul>
-      <h1 className="mt-4 text-4xl">Desk Setup</h1>
+      <h1 className="mt-4 text-4xl font-semi">Desk Setup</h1>
       <ul>
         <li>
           <span className="text-2xl">▷ Laptop&ensp;-&ensp;</span>
