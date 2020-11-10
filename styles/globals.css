@@ -17,3 +17,12 @@ main::-webkit-scrollbar-track {
   border-radius: 10px;
   background-color: #243161;
 }
+.icon {
+  cursor: pointer;
+  fill: #80b2ed;
+  transition: fill 0.2s ease-in-out;
+}
+.icon:hover {
+  cursor: pointer;
+  fill: white;
+}

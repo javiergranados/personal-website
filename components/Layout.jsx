@@ -2,6 +2,7 @@ import PropTypes from 'prop-types'
 import Image from 'next/image'
 import Head from 'next/head'
 import Navbar from './Navbar'
+import Social from './Social'
 import Footer from './Footer'
 import 'animate.css'
 
@@ -14,7 +15,6 @@ function Layout({ title, children }) {
       <div className="flex flex-col flex-1 w-screen h-screen text-base text-light bg-dark font-regular">
         <Navbar />
         <main className="relative flex flex-col flex-1 w-full max-w-5xl px-8 pt-5 pb-10 mx-auto my-0 overflow-auto">
-          {/* <main className="flex-1"> */}
           <div className="block md:hidden animate__animated animate__fadeIn">
             <Image src="/img/cover.svg" alt="cover" width={360} height={275} loading="eager" />
           </div>
@@ -24,8 +24,8 @@ function Layout({ title, children }) {
           <div className="hidden lg:block lg:max-w-4xl animate__animated animate__fadeIn">
             <Image src="/img/cover-lg.svg" alt="cover" width={895} height={360} loading="eager" />
           </div>
-          <div className="order-2 text-center animate__animated animate__fadeIn md:text-left">{children}</div>
-          {/* </main> */}
+          <Social />
+          <div className="text-center animate__animated animate__fadeIn md:text-left">{children}</div>
         </main>
         <Footer className="absolute bottom-0" />
       </div>
