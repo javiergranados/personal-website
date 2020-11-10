@@ -5,8 +5,11 @@ function ProjectsPage() {
     <>
       <h1 className="mb-4 text-4xl font-semi md:mb-2">A brief list of my public projects</h1>
       <ul className="text-left">
-        <li>
+        <li className="mb-2">
           <Link href="https://www.bitsacard.com/en">BitsaCard</Link>
+        </li>
+        <li className="mb-2">
+          <Link href="https://app.bitsacard.com/">App BitsaCard</Link>
         </li>
         <li>
           <Link href="https://www.entrenaxsalud.es/">Entrena X Salud</Link>
