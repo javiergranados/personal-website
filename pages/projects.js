@@ -3,8 +3,8 @@ import Link from '../components/Link'
 function ProjectsPage() {
   return (
     <>
-      <h1 className="text-4xl font-semi">A brief list of my public projects</h1>
-      <ul>
+      <h1 className="mb-4 text-4xl font-semi md:mb-2">A brief list of my public projects</h1>
+      <ul className="text-left">
         <li>
           <Link href="https://www.bitsacard.com/en">BitsaCard</Link>
         </li>

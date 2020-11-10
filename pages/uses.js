@@ -3,8 +3,8 @@ import Link from '../components/Link'
 function UsesPage() {
   return (
     <>
-      <h1 className="text-4xl font-semi">Apps</h1>
-      <ul>
+      <h1 className="mb-4 text-4xl font-semi md:mb-2">Apps</h1>
+      <ul className="text-left">
         <li>
           <span className="text-2xl">▷ Editor&ensp;-&ensp;</span>
           <Link href="https://code.visualstudio.com/" hideBullet>
@@ -24,8 +24,8 @@ function UsesPage() {
           </Link>
         </li>
       </ul>
-      <h1 className="mt-4 text-4xl font-semi">Desk Setup</h1>
-      <ul>
+      <h1 className="mt-10 mb-4 text-4xl font-semi md:mb-2 mb:mt-4">Desk Setup</h1>
+      <ul className="text-left">
         <li>
           <span className="text-2xl">▷ Laptop&ensp;-&ensp;</span>
           <Link href="https://www.amazon.es/Apple-MacBook-16-pulgadas-512-GB-almacenamiento/dp/B081GC15CY/" hideBullet>

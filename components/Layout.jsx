@@ -24,7 +24,7 @@ function Layout({ title, children }) {
             <div className="hidden lg:block lg:max-w-4xl animate__animated animate__fadeIn">
               <Image src="/img/cover-lg.svg" alt="cover" width={895} height={360} loading="eager" />
             </div>
-            <div className="animate__animated animate__fadeIn">{children}</div>
+            <div className="text-center animate__animated animate__fadeIn md:text-left">{children}</div>
           </main>
         </div>
         <Footer />
