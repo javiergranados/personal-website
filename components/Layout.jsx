@@ -11,9 +11,9 @@ function Layout({ title, children }) {
       <Head>
         <title>{`${title} | Javier Granados`}</title>
       </Head>
-      <div className="flex flex-col flex-1 w-screen h-screen overflow-auto text-base text-light bg-dark font-regular">
+      <div className="flex flex-col flex-1 w-screen h-screen text-base text-light bg-dark font-regular">
         <Navbar />
-        <main className="relative flex flex-col flex-1 w-full max-w-5xl px-8 pt-5 mx-auto my-0">
+        <main className="relative flex flex-col flex-1 w-full max-w-5xl px-8 pt-5 pb-10 mx-auto my-0 overflow-auto">
           {/* <main className="flex-1"> */}
           <div className="block md:hidden animate__animated animate__fadeIn">
             <Image src="/img/cover.svg" alt="cover" width={360} height={275} loading="eager" />
@@ -27,7 +27,7 @@ function Layout({ title, children }) {
           <div className="order-2 text-center animate__animated animate__fadeIn md:text-left">{children}</div>
           {/* </main> */}
         </main>
-        <Footer />
+        <Footer className="absolute bottom-0" />
       </div>
     </>
   )
