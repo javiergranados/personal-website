@@ -13,7 +13,7 @@ function Layout({ title, children }) {
       </Head>
       <div className="flex flex-col flex-1 w-screen h-screen text-base text-light bg-dark font-regular">
         <Navbar />
-        <main className="relative flex flex-col flex-1 w-full max-w-5xl px-8 mx-auto my-0 overflow-auto">
+        <main className="relative flex flex-col flex-1 w-full max-w-5xl px-8 pt-5 mx-auto my-0 overflow-auto">
           {/* <main className="flex-1"> */}
           <div className="block md:hidden animate__animated animate__fadeIn">
             <Image src="/img/cover.svg" alt="cover" width={360} height={275} loading="eager" />
