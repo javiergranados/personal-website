@@ -1,5 +1,4 @@
-import { useState, forwardRef } from 'react'
-import Link from 'next/link'
+import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 
@@ -9,20 +8,18 @@ function Navbar() {
 
   const handleClick = () => setShowMenu(!showMenu)
 
-  const Logo = forwardRef(({ onClick, href }, ref) => {
-    return (
-      <a href={href} onClick={onClick} ref={ref}>
-        <Image src="/img/logo.svg" alt="logo" width={65} height={50} loading="eager" />
-      </a>
-    )
-  })
+  const handleLink = event => {
+    event.preventDefault()
+    setShowMenu(false)
+    router.push(event.currentTarget.href)
+  }
 
   return (
-    <nav className="flex items-center justify-between p-6 border-b bg-dark border-light">
+    <nav className="flex flex-wrap items-center justify-between p-6 border-b bg-dark border-light">
       <div className="items-center flex-shrink-0 hidden mr-6 text-white cursor-pointer lg:flex">
-        <Link href="/">
-          <Logo />
-        </Link>
+        <a href="/" onClick={handleLink}>
+          <Image src="/img/logo.svg" alt="logo" width={65} height={50} loading="eager" />
+        </a>
       </div>
       <div className="block lg:hidden">
         <button
@@ -55,20 +52,34 @@ function Navbar() {
           showMenu ? 'flex' : 'hidden'
         } flex-grow w-full lg:flex lg:items-center lg:w-auto lg:flex-row flex-col`}
       >
-        <Link href="/">
-          <a className={`block navbar__button first odd lg:hidden${(router.pathname === '/' && ' selected') || ''}`}>
-            /home
-          </a>
-        </Link>
-        <Link href="/projects">
-          <a className={`navbar__button even${(router.pathname === '/projects' && ' selected') || ''}`}>/projects</a>
-        </Link>
-        <Link href="/uses">
-          <a className={`navbar__button odd${(router.pathname === '/uses' && ' selected') || ''}`}>/uses</a>
-        </Link>
-        <Link href="/about">
-          <a className={`navbar__button even${(router.pathname === '/about' && ' selected') || ''}`}>/about</a>
-        </Link>
+        <a
+          href="/"
+          onClick={handleLink}
+          className={`block navbar__button first odd lg:hidden${(router.pathname === '/' && ' selected') || ''}`}
+        >
+          /home
+        </a>
+        <a
+          href="/projects"
+          onClick={handleLink}
+          className={`navbar__button even${(router.pathname === '/projects' && ' selected') || ''}`}
+        >
+          /projects
+        </a>
+        <a
+          href="/uses"
+          onClick={handleLink}
+          className={`navbar__button odd${(router.pathname === '/uses' && ' selected') || ''}`}
+        >
+          /uses
+        </a>
+        <a
+          href="/about"
+          onClick={handleLink}
+          className={`navbar__button even${(router.pathname === '/about' && ' selected') || ''}`}
+        >
+          /about
+        </a>
         {/* TODO:  theme button switch  */}
       </div>
     </nav>
