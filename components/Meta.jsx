@@ -18,7 +18,7 @@ function Meta() {
       <meta property="og:image" content="https://jvgranados.com/img/logo.png" />
 
       {/* Twitter Meta Tags */}
-      <meta name="twitter:card" content="player" />
+      <meta name="twitter:card" content="summary" />
       <meta property="twitter:url" content="https://jvgranados.com/" />
       <meta name="twitter:title" content="Javier Granados" />
       <meta name="twitter:description" content="Welcome to my personal website! 🚀" />
