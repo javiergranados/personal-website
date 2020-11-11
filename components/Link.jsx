@@ -5,7 +5,7 @@ function CustomLink({ href, hideBullet, children }) {
   return (
     <Link href={href}>
       <a target="_blank" className="link">
-        {!hideBullet && <span className="type">▷</span>}
+        {!hideBullet && <span className="hidden type md:inline">▷</span>}
         <span className="value">{children}</span>
       </a>
     </Link>
