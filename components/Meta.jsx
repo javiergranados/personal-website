@@ -15,7 +15,7 @@ function Meta() {
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Javier Granados" />
       <meta property="og:description" content="Welcome to my personal website! 🚀" />
-      <meta property="og:image" content="https://jvgranados.com/img/logo-og.png" />
+      <meta property="og:image" content="https://jvgranados.com/img/logo.svg" />
 
       {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary" />
