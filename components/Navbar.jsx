@@ -18,7 +18,7 @@ function Navbar() {
   })
 
   return (
-    <nav className="flex flex-wrap items-center justify-between p-6 border-b bg-dark border-light">
+    <nav className="flex items-center justify-between p-6 border-b bg-dark border-light">
       <div className="items-center flex-shrink-0 hidden mr-6 text-white cursor-pointer lg:flex">
         <Link href="/">
           <Logo />
