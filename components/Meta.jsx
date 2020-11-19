@@ -6,7 +6,6 @@ function Meta() {
       {/* HTML Meta Tags */}
       <title>Javier Granados</title>
       <link rel="shortcut icon" href="/img/favicon.png" />
-      <meta charset="UTF-8" />
       <meta name="description" content="Welcome to my personal website! 🚀" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 

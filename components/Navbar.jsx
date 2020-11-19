@@ -18,7 +18,7 @@ function Navbar() {
     <nav className="flex flex-wrap items-center justify-between p-6 border-b bg-dark border-light">
       <div className="items-center flex-shrink-0 hidden mr-6 text-white cursor-pointer lg:flex">
         <a href="/" onClick={handleLink}>
-          <Image src="/img/logo.svg" alt="logo" width={65} height={50} loading="eager" />
+          <Image src="/img/logo.svg" alt="logo" width={65} height={50} />
         </a>
       </div>
       <div className="block lg:hidden">
