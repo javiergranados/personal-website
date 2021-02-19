@@ -2,7 +2,7 @@ function AboutPage() {
   return (
     <>
       <p className="text-4xl font-semi">
-        Web Developer | Husband | Father of 2 | Ocasional Rock Climbing | Tea lover | Fan of Nintendo | Fantasy books
+        Software Engineer | Husband | Father of 2 | Rock Climbing | Tea lover | Fan of Nintendo | Fantasy books
         enthusiast
       </p>
     </>
