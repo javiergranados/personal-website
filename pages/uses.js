@@ -28,20 +28,20 @@ function UsesPage() {
       <ul>
         <li>
           <span className="hidden text-2xl md:inline">▷ Laptop&ensp;-&ensp;</span>
-          <Link href="https://www.amazon.es/Apple-MacBook-16-pulgadas-512-GB-almacenamiento/dp/B081GC15CY/" hideBullet>
+          <Link href="https://www.amazon.es/Nuevo-Apple-MacBook-pulgadas-almacenamiento/dp/B081G9YQ73/" hideBullet>
             MacBook Pro
           </Link>
         </li>
         <li>
           <span className="hidden text-2xl md:inline">▷ Monitor&ensp;-&ensp;</span>
-          <Link href="https://www.amazon.es/Apple-inch-Thunderbolt-Display-Refurbished/dp/B07F86TT7W/" hideBullet>
-            Thunderbolt Display
+          <Link href="https://www.amazon.es/Dell-DELL-P2421DC-P2421DC/dp/B085XD8NV3/" hideBullet>
+            Dell P2421DC
           </Link>
         </li>
         <li>
           <span className="hidden text-2xl md:inline">▷ Keyboard&ensp;-&ensp;</span>
-          <Link href="https://www.amazon.es/Apple-MLA22Y-A-Teclado/dp/B016UPAXBE/" hideBullet>
-            Apple Magic Keyboard
+          <Link href="https://www.amazon.es/gp/product/B083NRGB42/" hideBullet>
+            Drevo Calibur V2 Pro
           </Link>
         </li>
         <li>
