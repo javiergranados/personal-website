@@ -11,8 +11,11 @@ function ProjectsPage() {
         <li className="mb-2">
           <Link href="https://app.bitsacard.com/">App BitsaCard</Link>
         </li>
-        <li>
+        <li className="mb-2">
           <Link href="https://www.entrenaxsalud.es/">Entrena X Salud</Link>
+        </li>
+        <li>
+          <Link href="https://dev.wallacoin.com/">Wallacoin</Link>
         </li>
       </ul>
     </>

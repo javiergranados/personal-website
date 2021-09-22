@@ -19,7 +19,7 @@ function UsesPage() {
         </li>
         <li>
           <span className="hidden text-2xl md:inline">▷ Settings&ensp;-&ensp;</span>
-          <Link href="https://github.com/jvgranados/dotfiles" hideBullet>
+          <Link href="https://github.com/javiergranados/dotfiles" hideBullet>
             Dot Files repo
           </Link>
         </li>
@@ -48,6 +48,21 @@ function UsesPage() {
           <span className="hidden text-2xl md:inline">▷ Mouse&ensp;-&ensp;</span>
           <Link href="https://www.amazon.es/Logitech-MX-Ergo-Trackball-inal%C3%A1mbrico/dp/B074W227RK/" hideBullet>
             Logitech MX Ergo
+          </Link>
+        </li>
+        <li>
+          <span className="hidden text-2xl md:inline">▷ Table top&ensp;-&ensp;</span>
+          <Link href="https://www.ikea.com/es/es/p/anfallare-tablero-bambu-00465141/" hideBullet>
+            ANFALLARE
+          </Link>
+        </li>
+        <li>
+          <span className="hidden text-2xl md:inline">▷ Adjustable Standing Desk&ensp;-&ensp;</span>
+          <Link
+            href="https://www.flexispot.es/escritorio-electrico-de-altura-regulable-de-3-secciones-e6-e7.html"
+            hideBullet
+          >
+            Flexispot E6/E7
           </Link>
         </li>
       </ul>
