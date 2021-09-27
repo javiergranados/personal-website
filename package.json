@@ -1,19 +1,20 @@
 {
-  "name": "jvgranados.com",
+  "name": "personal-website",
   "description": "My personal website",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Javier Granados",
   "license": "SEE LICENSE IN LICENSE",
   "keywords": [
     "react",
     "next",
     "javascript",
-    "jvgranados",
+    "javiergranados",
+    "javiergranadosdev",
     "website"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jvgranados/jvgranados.com"
+    "url": "https://github.com/javiergranados/personal-website"
   },
   "scripts": {
     "dev": "next dev -p 8000",
