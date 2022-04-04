@@ -13,8 +13,8 @@ function UsesPage() {
         </li>
         <li>
           <span className="hidden text-2xl md:inline">▷ Terminal&ensp;-&ensp;</span>
-          <Link href="https://hyper.is/" hideBullet>
-            Hyper
+          <Link href="https://iterm2.com/" hideBullet>
+            iTerm2
           </Link>
         </li>
         <li>
