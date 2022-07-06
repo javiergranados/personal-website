@@ -8,7 +8,7 @@ function IndexPage() {
         </span>
       </h1>
       <p className="text-3xl">
-        I&apos;m Javier Granados, a web developer based in Seville, Spain&nbsp;
+        I&apos;m Javier Granados, a frontend developer based in Seville, Spain&nbsp;
         <span role="img" aria-label="flag">
           🇪🇸
         </span>
