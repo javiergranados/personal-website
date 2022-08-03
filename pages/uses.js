@@ -59,10 +59,10 @@ function UsesPage() {
         <li>
           <span className="hidden text-2xl md:inline">▷ Adjustable Standing Desk&ensp;-&ensp;</span>
           <Link
-            href="https://www.flexispot.es/escritorio-electrico-de-altura-regulable-de-3-secciones-e6-e7.html"
+            href="https://www.flexispot.es/escritorio-regulable-electricamente-e7.html"
             hideBullet
           >
-            Flexispot E6/E7
+            Flexispot E7
           </Link>
         </li>
       </ul>
