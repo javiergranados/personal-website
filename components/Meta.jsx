@@ -8,6 +8,9 @@ function Meta() {
       <link rel="shortcut icon" href="/img/favicon.png" />
       <meta name="description" content="Welcome to my personal website! 🚀" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
+      {/* Mastodon Meta Tags */}
+      <link rel="me" href="https://mastodon.cloud/@javiergranados">
 
       {/* Open Graph Meta Tags */}
       <meta property="og:url" content="https://javiergranados.dev/" />
