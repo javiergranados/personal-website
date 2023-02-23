@@ -17,7 +17,7 @@ function ProjectsPage() {
           <Link href="https://www.entrenaxsalud.es/">Entrena X Salud</Link>
         </li>
         <li className="mb-2">
-          <Link href="https://www.bitsacard.com/es">BitsaCard</Link>
+          <Link href="https://bitsacard.com">BitsaCard</Link>
         </li>
         <li>
           <Link href="https://app.bitsacard.com/">App BitsaCard</Link>
