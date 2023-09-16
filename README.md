@@ -1,4 +1,6 @@
-## Javier Granados Website
+# DEPRECATED
+
+## Javier Granados Website 
 
 > All the codebase for [javiergranados.dev](https://javiergranados.dev) built with [Next.js](https://nextjs.org/)
 
